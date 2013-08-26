@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:background="#88f4c5"
+        >
+
+
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bienvenido"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold|italic"
+            android:layout_alignLeft="@+id/infocuenta"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/saldo"
+            android:id="@+id/infocuenta"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/textView"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/bcompra"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:id="@+id/button"
+            android:layout_below="@+id/brecarga"
+            android:layout_alignLeft="@+id/brecarga"
+            android:layout_alignRight="@+id/brecarga"
+            android:onClick="salirHome"/>
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bscompra"
+            android:id="@+id/bcompra"
+            android:onClick="irCompra"
+            android:layout_below="@+id/infocuenta"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsrecarga"
+            android:id="@+id/brecarga"
+            android:onClick="irRecarga"
+            android:layout_below="@+id/breporte"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/breporte"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsreport"
+            android:id="@+id/breporte"
+            android:onClick="irReporte"
+            android:layout_below="@+id/bcompra"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>
+
+
+
+
